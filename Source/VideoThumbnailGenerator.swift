@@ -11,7 +11,7 @@ import AVFoundation
 
 class VideoThumbnailGenerator : ROThumbnailGenerator {
     
-    var supportedExtensions:Array<String> = ["mov"]
+    var supportedExtensions:Array<String> = ["mov", "m4a"]
     
     func getThumbnail(url: NSURL) -> UIImage {
         if let asset:AVAsset = AVAsset.assetWithURL(url) as? AVAsset {

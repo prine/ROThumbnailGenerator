@@ -11,7 +11,38 @@ pod "ROThumbnailGenerator"
 ```
 
 ## How to use
-Todo
+The ROThumbnail class is responsible for creating thumbnails by a given URL. The method `getThumbnail(url:NSURL)` does internally check the supported file types and uses the corresponding implementation of ROThumbnailGenerator.
+
+At the moment there are the following file types supported:
+ * PDF (.pdf)
+ * IMAGE (.png, .jpg, .jpeg)
+ * VIDEO (.mov, .m4a)
+
+You can retrieve the thumbnail of a given URL like that:
+```swift
+var thumbnailImage = ROThumbnail.sharedInstance.getThumbnail(fileUrl)
+```
+
+If you want to add a new implementation of the ROThumbnailGenerator you can do this by implementing the ROThumbnailGenerator class and define your supported file extensions you are going to handle with this implementation.
+
+Here is a small example:
+
+```swift
+class ImageThumbnailGenerator : ROThumbnailGenerator {
+
+    var supportedExtensions:Array<String> = ["png", "jpg", "jpeg"]
+
+    func getThumbnail(url:NSURL) -> UIImage {
+        return UIImage(data: NSData(contentsOfURL: url)!) ?? UIImage(named: "Piktogramm_IMAGE")!
+    }
+}
+```
+
+You can add your implementation with the following call:
+```swift
+ROThumbnail.sharedInstance.addThumbnailGenerator(yourThumbnailGenerator)
+```
+
 
 ## License
 
