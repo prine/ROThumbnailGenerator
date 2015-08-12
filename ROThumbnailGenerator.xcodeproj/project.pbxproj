@@ -13,6 +13,15 @@
 		CB3438821B7B3BAF00EEB5DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3438811B7B3BAF00EEB5DB /* Images.xcassets */; };
 		CB3438851B7B3BAF00EEB5DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3438831B7B3BAF00EEB5DB /* LaunchScreen.xib */; };
 		CB3438911B7B3BAF00EEB5DB /* ROThumbnailGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438901B7B3BAF00EEB5DB /* ROThumbnailGeneratorTests.swift */; };
+		CB3438A71B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A31B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift */; };
+		CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */; };
+		CB3438A91B7B3C3300EEB5DB /* ROThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */; };
+		CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A61B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift */; };
+		CB3438AC1B7B470B00EEB5DB /* ROThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */; };
+		CB3438AE1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438AD1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift */; };
+		CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */; };
+		CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B11B7B6A4900EEB5DB /* TestImage.png */; };
+		CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		CB34388A1B7B3BAF00EEB5DB /* ROThumbnailGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROThumbnailGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB34388F1B7B3BAF00EEB5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3438901B7B3BAF00EEB5DB /* ROThumbnailGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROThumbnailGeneratorTests.swift; sourceTree = "<group>"; };
+		CB3438A31B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageThumbnailGenerator.swift; path = Source/ImageThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
+		CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFThumbnailGenerator.swift; path = Source/PDFThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
+		CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROThumbnailGenerator.swift; path = Source/ROThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
+		CB3438A61B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoThumbnailGenerator.swift; path = Source/VideoThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
+		CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROThumbnail.swift; sourceTree = "<group>"; };
+		CB3438AD1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultThumbnailGenerator.swift; path = Source/DefaultThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
+		CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TestMovie.mov; sourceTree = "<group>"; };
+		CB3438B11B7B6A4900EEB5DB /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestImage.png; sourceTree = "<group>"; };
+		CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPdf.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 				CB34387E1B7B3BAF00EEB5DB /* Main.storyboard */,
 				CB3438811B7B3BAF00EEB5DB /* Images.xcassets */,
 				CB3438831B7B3BAF00EEB5DB /* LaunchScreen.xib */,
+				CB3438A21B7B3C0600EEB5DB /* Source */,
 				CB3438781B7B3BAF00EEB5DB /* Supporting Files */,
 			);
 			path = ROThumbnailGenerator;
@@ -90,6 +109,9 @@
 		CB3438781B7B3BAF00EEB5DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */,
+				CB3438B11B7B6A4900EEB5DB /* TestImage.png */,
+				CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */,
 				CB3438791B7B3BAF00EEB5DB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +132,19 @@
 				CB34388F1B7B3BAF00EEB5DB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB3438A21B7B3C0600EEB5DB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */,
+				CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */,
+				CB3438A31B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift */,
+				CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */,
+				CB3438A61B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift */,
+				CB3438AD1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */,
 				CB3438801B7B3BAF00EEB5DB /* Main.storyboard in Resources */,
+				CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */,
 				CB3438851B7B3BAF00EEB5DB /* LaunchScreen.xib in Resources */,
 				CB3438821B7B3BAF00EEB5DB /* Images.xcassets in Resources */,
+				CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB34387D1B7B3BAF00EEB5DB /* ViewController.swift in Sources */,
+				CB3438AC1B7B470B00EEB5DB /* ROThumbnail.swift in Sources */,
+				CB3438AE1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift in Sources */,
 				CB34387B1B7B3BAF00EEB5DB /* AppDelegate.swift in Sources */,
+				CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */,
+				CB3438A91B7B3C3300EEB5DB /* ROThumbnailGenerator.swift in Sources */,
+				CB3438A71B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift in Sources */,
+				CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
