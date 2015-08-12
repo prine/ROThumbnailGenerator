@@ -22,6 +22,8 @@
 		CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */; };
 		CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B11B7B6A4900EEB5DB /* TestImage.png */; };
 		CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */; };
+		CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB3438B91B7B71BB00EEB5DB /* README.md */; };
+		CB3438BC1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TestMovie.mov; sourceTree = "<group>"; };
 		CB3438B11B7B6A4900EEB5DB /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestImage.png; sourceTree = "<group>"; };
 		CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPdf.pdf; sourceTree = "<group>"; };
+		CB3438B91B7B71BB00EEB5DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROThumbnailGenerator.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		CB3438771B7B3BAF00EEB5DB /* ROThumbnailGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				CB3438B91B7B71BB00EEB5DB /* README.md */,
+				CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */,
 				CB34387A1B7B3BAF00EEB5DB /* AppDelegate.swift */,
 				CB34387C1B7B3BAF00EEB5DB /* ViewController.swift */,
 				CB34387E1B7B3BAF00EEB5DB /* Main.storyboard */,
@@ -230,6 +236,7 @@
 				CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */,
 				CB3438801B7B3BAF00EEB5DB /* Main.storyboard in Resources */,
 				CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */,
+				CB3438BC1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec in Resources */,
 				CB3438851B7B3BAF00EEB5DB /* LaunchScreen.xib in Resources */,
 				CB3438821B7B3BAF00EEB5DB /* Images.xcassets in Resources */,
 				CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */,
@@ -256,6 +263,7 @@
 				CB34387B1B7B3BAF00EEB5DB /* AppDelegate.swift in Sources */,
 				CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */,
 				CB3438A91B7B3C3300EEB5DB /* ROThumbnailGenerator.swift in Sources */,
+				CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */,
 				CB3438A71B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift in Sources */,
 				CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */,
 			);
@@ -455,6 +463,7 @@
 				CB3438961B7B3BAF00EEB5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB3438971B7B3BAF00EEB5DB /* Build configuration list for PBXNativeTarget "ROThumbnailGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +472,7 @@
 				CB3438991B7B3BAF00EEB5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
