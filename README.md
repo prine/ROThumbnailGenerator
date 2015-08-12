@@ -1,5 +1,5 @@
 # ROThumbnailGenerator
-Creates Thumbnails....
+Create thumbnail images by a given URL (supports at the moment PDF, Images and Videos).
 
 ## Installation
 
