@@ -10,7 +10,7 @@ import UIKit
 
 public class ROThumbnail {
     
-    static let sharedInstance:ROThumbnail = ROThumbnail()
+    public static let sharedInstance:ROThumbnail = ROThumbnail()
     private var supportedFiletypes:Dictionary<String, ROThumbnailGenerator> = [:]
     
     init() {
