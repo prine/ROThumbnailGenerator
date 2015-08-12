@@ -17,13 +17,13 @@
 		CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */; };
 		CB3438A91B7B3C3300EEB5DB /* ROThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */; };
 		CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438A61B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift */; };
-		CB3438AC1B7B470B00EEB5DB /* ROThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */; };
 		CB3438AE1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438AD1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift */; };
 		CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */; };
 		CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B11B7B6A4900EEB5DB /* TestImage.png */; };
 		CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */; };
 		CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB3438B91B7B71BB00EEB5DB /* README.md */; };
 		CB3438BC1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */; };
+		CB3438BE1B7B790800EEB5DB /* ROThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +51,13 @@
 		CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFThumbnailGenerator.swift; path = Source/PDFThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
 		CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROThumbnailGenerator.swift; path = Source/ROThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
 		CB3438A61B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoThumbnailGenerator.swift; path = Source/VideoThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
-		CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROThumbnail.swift; sourceTree = "<group>"; };
 		CB3438AD1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultThumbnailGenerator.swift; path = Source/DefaultThumbnailGenerator.swift; sourceTree = SOURCE_ROOT; };
 		CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TestMovie.mov; sourceTree = "<group>"; };
 		CB3438B11B7B6A4900EEB5DB /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestImage.png; sourceTree = "<group>"; };
 		CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPdf.pdf; sourceTree = "<group>"; };
 		CB3438B91B7B71BB00EEB5DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROThumbnailGenerator.podspec; sourceTree = SOURCE_ROOT; };
+		CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROThumbnail.swift; path = Source/ROThumbnail.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 		CB3438A21B7B3C0600EEB5DB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CB3438AB1B7B470B00EEB5DB /* ROThumbnail.swift */,
+				CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */,
 				CB3438A51B7B3C3300EEB5DB /* ROThumbnailGenerator.swift */,
 				CB3438A31B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift */,
 				CB3438A41B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift */,
@@ -258,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB34387D1B7B3BAF00EEB5DB /* ViewController.swift in Sources */,
-				CB3438AC1B7B470B00EEB5DB /* ROThumbnail.swift in Sources */,
 				CB3438AE1B7B475F00EEB5DB /* DefaultThumbnailGenerator.swift in Sources */,
 				CB34387B1B7B3BAF00EEB5DB /* AppDelegate.swift in Sources */,
 				CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */,
@@ -266,6 +265,7 @@
 				CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */,
 				CB3438A71B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift in Sources */,
 				CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */,
+				CB3438BE1B7B790800EEB5DB /* ROThumbnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
