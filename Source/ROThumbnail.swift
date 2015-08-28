@@ -30,7 +30,7 @@ public class ROThumbnail {
       It does automatically add the supported extensions in the internal dictionary and make therefor
       the new genorator accessible for the getThumbnail methods
     
-      :param: thumbnailGenerator:ROThumbnailGenerator The ROThumbnailGenerator implementation you want to add
+      - parameter thumbnailGenerator:ROThumbnailGenerator: The ROThumbnailGenerator implementation you want to add
     */
     public func addThumbnailGenerator(thumbnailGenerator:ROThumbnailGenerator) {
         for fileExtension in thumbnailGenerator.supportedExtensions {
@@ -41,12 +41,12 @@ public class ROThumbnail {
     /** 
        Analyses the file extension of the given url and uses the corresponding ROThumbnailGenerator
     
-       :param: url:NSURL Defines the url you want to create a Thumbnail 
-       :returns: UIImage It does create the created Thumbnail image
+       - parameter url:NSURL: Defines the url you want to create a Thumbnail 
+       - returns: UIImage It does create the created Thumbnail image
      */
     public func getThumbnail(url:NSURL) -> UIImage {
         if let fileExtension = url.pathExtension {
-            var appropriateThumbnailGenerator = supportedFiletypes[fileExtension] ?? DefaultThumbnailGenerator()
+            let appropriateThumbnailGenerator = supportedFiletypes[fileExtension] ?? DefaultThumbnailGenerator()
             return appropriateThumbnailGenerator.getThumbnail(url)
         }
         

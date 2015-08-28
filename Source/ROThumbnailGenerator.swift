@@ -20,9 +20,9 @@ public protocol ROThumbnailGenerator {
     /**
         Create a UIImage thumbnail from the given URL
     
-        :param: url The url to the document the thumbnail should be generated.
+        - parameter url: The url to the document the thumbnail should be generated.
     
-        :returns: thumbnail The created thumbnail image.
+        - returns: thumbnail The created thumbnail image.
       */
     func getThumbnail(url:NSURL) -> UIImage;
 }
