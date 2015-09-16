@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "ROThumbnailGenerator"
-s.version          = "1.0.2"
+s.version          = "1.0.3"
 s.summary          = "Creates thumbnails of different file types very easily"
 s.description      = <<-DESC
 It does create a thumbnail by the given file url. Creation of PDF, Image and Video thumbnails is per default supported.

@@ -11,6 +11,7 @@ import UIKit
 public class ROThumbnail {
     
     public static let sharedInstance:ROThumbnail = ROThumbnail()
+    public var imageQuality:CGFloat = 1.0 // Default is 100% JPEG image quality
     private var supportedFiletypes:Dictionary<String, ROThumbnailGenerator> = [:]
     
     init() {
@@ -34,7 +35,7 @@ public class ROThumbnail {
     */
     public func addThumbnailGenerator(thumbnailGenerator:ROThumbnailGenerator) {
         for fileExtension in thumbnailGenerator.supportedExtensions {
-            supportedFiletypes[fileExtension] = thumbnailGenerator
+            supportedFiletypes[fileExtension.lowercaseString] = thumbnailGenerator
         }
     }
     
@@ -46,8 +47,14 @@ public class ROThumbnail {
      */
     public func getThumbnail(url:NSURL) -> UIImage {
         if let fileExtension = url.pathExtension {
-            var appropriateThumbnailGenerator = supportedFiletypes[fileExtension] ?? DefaultThumbnailGenerator()
-            return appropriateThumbnailGenerator.getThumbnail(url)
+            var appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercaseString] ?? DefaultThumbnailGenerator()
+            var thumbnail = appropriateThumbnailGenerator.getThumbnail(url)
+            
+            // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
+            var jpeg:NSData = UIImageJPEGRepresentation(thumbnail, imageQuality)
+            thumbnail = UIImage(data: jpeg)!
+            
+            return thumbnail
         }
         
         return UIImage(named:"fallbackIcon")!
