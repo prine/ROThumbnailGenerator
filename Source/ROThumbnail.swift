@@ -31,7 +31,7 @@ public class ROThumbnail {
       It does automatically add the supported extensions in the internal dictionary and make therefor
       the new genorator accessible for the getThumbnail methods
     
-      :param: thumbnailGenerator:ROThumbnailGenerator The ROThumbnailGenerator implementation you want to add
+      - parameter thumbnailGenerator:ROThumbnailGenerator: The ROThumbnailGenerator implementation you want to add
     */
     public func addThumbnailGenerator(thumbnailGenerator:ROThumbnailGenerator) {
         for fileExtension in thumbnailGenerator.supportedExtensions {
@@ -42,16 +42,16 @@ public class ROThumbnail {
     /** 
        Analyses the file extension of the given url and uses the corresponding ROThumbnailGenerator
     
-       :param: url:NSURL Defines the url you want to create a Thumbnail 
-       :returns: UIImage It does create the created Thumbnail image
+       - parameter url:NSURL: Defines the url you want to create a Thumbnail 
+       - returns: UIImage It does create the created Thumbnail image
      */
     public func getThumbnail(url:NSURL) -> UIImage {
         if let fileExtension = url.pathExtension {
-            var appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercaseString] ?? DefaultThumbnailGenerator()
+            let appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercaseString] ?? DefaultThumbnailGenerator()
             var thumbnail = appropriateThumbnailGenerator.getThumbnail(url)
             
             // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
-            var jpeg:NSData = UIImageJPEGRepresentation(thumbnail, imageQuality)
+            let jpeg:NSData = UIImageJPEGRepresentation(thumbnail, imageQuality)!
             thumbnail = UIImage(data: jpeg)!
             
             return thumbnail

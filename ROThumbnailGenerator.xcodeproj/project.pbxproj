@@ -197,6 +197,8 @@
 		CB34386D1B7B3BAF00EEB5DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Prine Development";
 				TargetAttributes = {

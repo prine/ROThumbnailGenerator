@@ -17,15 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var thumbnail = ROThumbnail.sharedInstance
+        let thumbnail = ROThumbnail.sharedInstance
         
-        var imageURL = NSBundle.mainBundle().URLForResource("TestImage", withExtension: "png")
+        let imageURL = NSBundle.mainBundle().URLForResource("TestImage", withExtension: "png")
         testImage.image = thumbnail.getThumbnail(imageURL!)
         
-        var documentURL = NSBundle.mainBundle().URLForResource("TestPdf", withExtension: "pdf")
+        let documentURL = NSBundle.mainBundle().URLForResource("TestPdf", withExtension: "pdf")
         testPdf.image = thumbnail.getThumbnail(documentURL!)
         
-        var movieURL = NSBundle.mainBundle().URLForResource("TestMovie", withExtension: "mov")
+        let movieURL = NSBundle.mainBundle().URLForResource("TestMovie", withExtension: "mov")
         testVideo.image = thumbnail.getThumbnail(movieURL!)
     }
 
