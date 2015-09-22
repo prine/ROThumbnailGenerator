@@ -21,7 +21,6 @@
 		CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */; };
 		CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B11B7B6A4900EEB5DB /* TestImage.png */; };
 		CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */; };
-		CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB3438B91B7B71BB00EEB5DB /* README.md */; };
 		CB3438BC1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */; };
 		CB3438BE1B7B790800EEB5DB /* ROThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */; };
 /* End PBXBuildFile section */
@@ -199,7 +198,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Prine Development";
 				TargetAttributes = {
 					CB3438741B7B3BAF00EEB5DB = {
@@ -264,7 +263,6 @@
 				CB34387B1B7B3BAF00EEB5DB /* AppDelegate.swift in Sources */,
 				CB3438AA1B7B3C3300EEB5DB /* VideoThumbnailGenerator.swift in Sources */,
 				CB3438A91B7B3C3300EEB5DB /* ROThumbnailGenerator.swift in Sources */,
-				CB3438BB1B7B71BB00EEB5DB /* README.md in Sources */,
 				CB3438A71B7B3C3300EEB5DB /* ImageThumbnailGenerator.swift in Sources */,
 				CB3438A81B7B3C3300EEB5DB /* PDFThumbnailGenerator.swift in Sources */,
 				CB3438BE1B7B790800EEB5DB /* ROThumbnail.swift in Sources */,
@@ -330,6 +328,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -398,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ROThumbnailGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.prine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -408,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ROThumbnailGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.prine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -426,6 +427,7 @@
 				);
 				INFOPLIST_FILE = ROThumbnailGeneratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.prine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROThumbnailGenerator.app/ROThumbnailGenerator";
 			};
@@ -441,6 +443,7 @@
 				);
 				INFOPLIST_FILE = ROThumbnailGeneratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.prine.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROThumbnailGenerator.app/ROThumbnailGenerator";
 			};

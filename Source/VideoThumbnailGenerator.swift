@@ -21,25 +21,21 @@ class VideoThumbnailGenerator : ROThumbnailGenerator {
             let assetImgGenerate : AVAssetImageGenerator = AVAssetImageGenerator(asset: asset)
             
             assetImgGenerate.appliesPreferredTrackTransform = true
-            var error       : NSError? = nil
-            
+
             // Jump to the third (1/3) of the video and fetch the thumbnail from there (600 is the timescale and is a multiplier of 24fps, 25fps, 30fps..)
             let time        : CMTime = CMTimeMakeWithSeconds(durationSeconds/3.0, 600)
             var img         : CGImageRef
             do {
                 img = try assetImgGenerate.copyCGImageAtTime(time, actualTime: nil)
-                let frameImg    : UIImage = try UIImage(CGImage: img)
+                let frameImg: UIImage = UIImage(CGImage: img)
                 
                 return frameImg
-            } catch let error1 as NSError {
-                error = error1
-                // FIXME: Check if this is not invoking any unwanted behaviour
-                // img = nil
+            } catch let error as NSError {
+                print("ERROR: \(error)")
+                return UIImage(named:"fallbackIcon")!
             }
         } else {
             return UIImage(named:"fallbackIcon")!
         }
-        
-        return UIImage(named:"fallbackIcon")!
     }
 }
