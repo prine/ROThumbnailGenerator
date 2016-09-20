@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class ROThumbnail {
+open class ROThumbnail {
     
-    public static let sharedInstance:ROThumbnail = ROThumbnail()
-    public var imageQuality:CGFloat = 1.0 // Default is 100% JPEG image quality
-    private var supportedFiletypes:Dictionary<String, ROThumbnailGenerator> = [:]
+    open static let sharedInstance:ROThumbnail = ROThumbnail()
+    open var imageQuality:CGFloat = 1.0 // Default is 100% JPEG image quality
+    fileprivate var supportedFiletypes:Dictionary<String, ROThumbnailGenerator> = [:]
     
     init() {
         self.initializeSupportedGenerators()
     }
     
-    private func initializeSupportedGenerators() {
+    fileprivate func initializeSupportedGenerators() {
         // Add all per default added Thumbnail generators
         // If you want to add your own thumbnail generator use the method ROThumbnail.sharedInstance.addThumbnailGenerator(yourGenerator)
         addThumbnailGenerator(ImageThumbnailGenerator())
@@ -33,9 +33,9 @@ public class ROThumbnail {
     
       - parameter thumbnailGenerator:ROThumbnailGenerator: The ROThumbnailGenerator implementation you want to add
     */
-    public func addThumbnailGenerator(thumbnailGenerator:ROThumbnailGenerator) {
+    open func addThumbnailGenerator(_ thumbnailGenerator:ROThumbnailGenerator) {
         for fileExtension in thumbnailGenerator.supportedExtensions {
-            supportedFiletypes[fileExtension.lowercaseString] = thumbnailGenerator
+            supportedFiletypes[fileExtension.lowercased()] = thumbnailGenerator
         }
     }
     
@@ -45,18 +45,17 @@ public class ROThumbnail {
        - parameter url:NSURL: Defines the url you want to create a Thumbnail 
        - returns: UIImage It does create the created Thumbnail image
      */
-    public func getThumbnail(url:NSURL) -> UIImage {
-        if let fileExtension = url.pathExtension {
-            let appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercaseString] ?? DefaultThumbnailGenerator()
-            var thumbnail = appropriateThumbnailGenerator.getThumbnail(url)
-            
-            // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
-            let jpeg:NSData = UIImageJPEGRepresentation(thumbnail, imageQuality)!
-            thumbnail = UIImage(data: jpeg)!
-            
-            return thumbnail
-        }
+    open func getThumbnail(_ url:URL) -> UIImage {
+        let fileExtension = url.pathExtension
         
-        return UIImage(named:"fallbackIcon")!
+        let appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercased()] ?? DefaultThumbnailGenerator()
+        var thumbnail = appropriateThumbnailGenerator.getThumbnail(url)
+         
+        // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
+        let jpeg:Data = UIImageJPEGRepresentation(thumbnail, imageQuality)!
+        thumbnail = UIImage(data: jpeg)!
+         
+        
+        return thumbnail
     }
 }

@@ -19,13 +19,13 @@ class ViewController: UIViewController {
         
         let thumbnail = ROThumbnail.sharedInstance
         
-        let imageURL = NSBundle.mainBundle().URLForResource("TestImage", withExtension: "png")
+        let imageURL = Bundle.main.url(forResource: "TestImage", withExtension: "png")
         testImage.image = thumbnail.getThumbnail(imageURL!)
         
-        let documentURL = NSBundle.mainBundle().URLForResource("TestPdf", withExtension: "pdf")
+        let documentURL = Bundle.main.url(forResource: "TestPdf", withExtension: "pdf")
         testPdf.image = thumbnail.getThumbnail(documentURL!)
         
-        let movieURL = NSBundle.mainBundle().URLForResource("TestMovie", withExtension: "mov")
+        let movieURL = Bundle.main.url(forResource: "TestMovie", withExtension: "mov")
         testVideo.image = thumbnail.getThumbnail(movieURL!)
     }
 

@@ -12,7 +12,7 @@ class ImageThumbnailGenerator : ROThumbnailGenerator {
     
     var supportedExtensions:Array<String> = ["png", "jpg", "jpeg"]
 
-    func getThumbnail(url:NSURL) -> UIImage {
-        return UIImage(data: NSData(contentsOfURL: url)!) ?? UIImage(named: "Piktogramm_IMAGE")!
+    func getThumbnail(_ url:URL) -> UIImage {
+        return UIImage(data: try! Data(contentsOf: url)) ?? UIImage(named: "Piktogramm_IMAGE")!
     }
 }

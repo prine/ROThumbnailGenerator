@@ -12,7 +12,7 @@ class DefaultThumbnailGenerator : ROThumbnailGenerator {
     
     var supportedExtensions:Array<String> = []
     
-    func getThumbnail(url: NSURL) -> UIImage {
+    func getThumbnail(_ url: URL) -> UIImage {
         return UIImage(named:"fallbackIcon")!
     }
 }

@@ -24,5 +24,5 @@ public protocol ROThumbnailGenerator {
     
         - returns: thumbnail The created thumbnail image.
       */
-    func getThumbnail(url:NSURL) -> UIImage;
+    func getThumbnail(_ url:URL) -> UIImage;
 }
