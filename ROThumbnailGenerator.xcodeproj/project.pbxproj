@@ -204,9 +204,11 @@
 				TargetAttributes = {
 					CB3438741B7B3BAF00EEB5DB = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					CB3438891B7B3BAF00EEB5DB = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = CB3438741B7B3BAF00EEB5DB;
 					};
 				};
@@ -399,6 +401,7 @@
 				INFOPLIST_FILE = ROThumbnailGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -409,6 +412,7 @@
 				INFOPLIST_FILE = ROThumbnailGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -427,6 +431,7 @@
 				INFOPLIST_FILE = ROThumbnailGeneratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROThumbnailGenerator.app/ROThumbnailGenerator";
 			};
 			name = Debug;
@@ -442,6 +447,7 @@
 				INFOPLIST_FILE = ROThumbnailGeneratorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROThumbnailGenerator.app/ROThumbnailGenerator";
 			};
 			name = Release;
