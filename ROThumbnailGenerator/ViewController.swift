@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         let imageURL = Bundle.main.url(forResource: "TestImage", withExtension: "png")
         testImage.image = thumbnail.getThumbnail(imageURL!)
         
-        let documentURL = Bundle.main.url(forResource: "TestPdf", withExtension: "pdf")
+        // let documentURL = Bundle.main.url(forResource: "TestPdf", withExtension: "pdf")
+        let documentURL = Bundle.main.url(forResource: "TestPdf2", withExtension: "pdf")
         testPdf.image = thumbnail.getThumbnail(documentURL!)
         
         let movieURL = Bundle.main.url(forResource: "TestMovie", withExtension: "mov")

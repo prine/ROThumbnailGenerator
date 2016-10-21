@@ -23,6 +23,7 @@
 		CB3438B41B7B6A8900EEB5DB /* TestPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */; };
 		CB3438BC1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */; };
 		CB3438BE1B7B790800EEB5DB /* ROThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */; };
+		CB48C11A1DAD440800B7CD15 /* TestPdf2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB48C1191DAD440800B7CD15 /* TestPdf2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CB3438B91B7B71BB00EEB5DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CB3438BA1B7B71BB00EEB5DB /* ROThumbnailGenerator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROThumbnailGenerator.podspec; sourceTree = SOURCE_ROOT; };
 		CB3438BD1B7B790800EEB5DB /* ROThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROThumbnail.swift; path = Source/ROThumbnail.swift; sourceTree = SOURCE_ROOT; };
+		CB48C1191DAD440800B7CD15 /* TestPdf2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPdf2.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				CB3438AF1B7B6A3C00EEB5DB /* TestMovie.mov */,
 				CB3438B11B7B6A4900EEB5DB /* TestImage.png */,
 				CB3438B31B7B6A8900EEB5DB /* TestPdf.pdf */,
+				CB48C1191DAD440800B7CD15 /* TestPdf2.pdf */,
 				CB3438791B7B3BAF00EEB5DB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB48C11A1DAD440800B7CD15 /* TestPdf2.pdf in Resources */,
 				CB3438B21B7B6A4900EEB5DB /* TestImage.png in Resources */,
 				CB3438801B7B3BAF00EEB5DB /* Main.storyboard in Resources */,
 				CB3438B01B7B6A3C00EEB5DB /* TestMovie.mov in Resources */,
