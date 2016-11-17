@@ -38,8 +38,8 @@ open class ROThumbnail {
             supportedFiletypes[fileExtension.lowercased()] = thumbnailGenerator
         }
     }
-    
-    /** 
+
+    /**
        Analyses the file extension of the given url and uses the corresponding ROThumbnailGenerator
     
        - parameter url:NSURL: Defines the url you want to create a Thumbnail 
@@ -50,11 +50,14 @@ open class ROThumbnail {
         
         let appropriateThumbnailGenerator = supportedFiletypes[fileExtension.lowercased()] ?? DefaultThumbnailGenerator()
         var thumbnail = appropriateThumbnailGenerator.getThumbnail(url)
-         
-        // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
-        let jpeg:Data = UIImageJPEGRepresentation(thumbnail, imageQuality)!
-        thumbnail = UIImage(data: jpeg)!
-         
+
+        // Don't perform compression if image quality is set to 100%
+        if imageQuality < 1 {
+            // Image quality of the thumbnail is defined in the imageQuality variable, can be setted from outside
+            let jpeg:Data = UIImageJPEGRepresentation(thumbnail, imageQuality)!
+            thumbnail = UIImage(data: jpeg)!
+        }
+        
         
         return thumbnail
     }
